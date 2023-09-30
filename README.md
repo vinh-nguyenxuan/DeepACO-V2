@@ -15,7 +15,11 @@ The docker image for inference.
 ```shell
 docker run --name deepacov2 --gpus all -it phlong/deepacov2:infer
 ```
-
+# with a capacity of 75gb and continued to overflow even though the pull was completed and still encountered errors
+# In order: image capacity before pulling and image after pulling.
+# In just 2 minutes, from 29GB free space to 18GB free space, even though the command stopped running and then 3 minutes later the memory overflowed.
+![image](https://github.com/vinh-nguyenxuan/DeepACO-V2/assets/100479377/17ca78c9-e752-4d25-bbd8-89d3f0dfc93e)
+![image (1)](https://github.com/vinh-nguyenxuan/DeepACO-V2/assets/100479377/ebcaa3d0-377e-4332-9f5d-900038c0d1fd)
 </details>
 
 ## Inference
